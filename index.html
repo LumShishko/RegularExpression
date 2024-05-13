@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let regex1 = /[a-c]/
+
+        let emri = "jcoders"
+
+        console.log(regex1.exec(emri))
+
+        let text = "London, spain, Paris";
+        let result = text.match("ain");
+        console.log(result)
+
+        let tekst = "E hwnw!";
+        let rezultat = tekst.replace("w", "ë");
+        console.log(rezultat)
+
+        
+
+function checkEmail() {
+let result = document.querySelector('.result')
+var emailInput = document.getElementById("email").value;
+if (/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(emailInput)){
+ result.innerHTML = "Email is valid"
+ result.style.color = '#55C0A6'
+} else {
+ result.innerHTML = "Email is invalid"
+ result.style.color = '#f15b5b'
+}
+}
+    </script>
+</body>
+</html>
